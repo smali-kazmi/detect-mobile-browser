@@ -1,4 +1,4 @@
-detect-mobile-browser
+Detect Mobile Browser
 =====================
 
 Small plugin to detect mobile browser 
