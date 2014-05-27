@@ -21,7 +21,7 @@ var SmartPhone = {
         return this.getUserAgent().match(/Opera Mini/i);
     },
     isWindows: function() {
-        return this.getUserAgent().match(/IEMobile/i);
+        return this.getUserAgent().match(/IEMobile/i) || navigator.userAgent.match(/WPDesktop/i); ;
     },
     isAny: function() {
         var foundAny = false;
