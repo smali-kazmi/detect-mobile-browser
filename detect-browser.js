@@ -21,7 +21,13 @@ var SmartPhone = {
         return this.getUserAgent().match(/Opera Mini/i);
     },
     isWindows: function() {
-        return this.getUserAgent().match(/IEMobile/i) || navigator.userAgent.match(/WPDesktop/i); ;
+        return this.isWindowsDesktop() || this.isWindowsMobile();
+    },
+    isWindowsMobile: function() {
+        return this.getUserAgent().match(/IEMobile/i);
+    },
+    isWindowsDesktop: function() {
+        return this.getUserAgent().match(/WPDesktop/i); ;
     },
     isAny: function() {
         var foundAny = false;
@@ -30,7 +36,7 @@ var SmartPhone = {
         });
 
         for (var index in getAllMethods) {
-            if (getAllMethods[index] === 'getUserAgent' || getAllMethods[index] === 'isAny') {
+            if (getAllMethods[index] === 'getUserAgent' || getAllMethods[index] === 'isAny' || getAllMethods[index] === 'isWindows') {
                 continue;
             }
             if (SmartPhone[getAllMethods[index]]()) {
