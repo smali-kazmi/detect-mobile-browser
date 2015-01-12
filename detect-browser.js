@@ -15,7 +15,7 @@ var SmartPhone = {
         return this.getUserAgent().match(/BlackBerry/i);
     },
     isIOS: function() {
-        return this.getUserAgent().match(/iPhone|iPad|iPod/i);
+        return this.getUserAgent().match(/iP(?:hone|ad|od)/i);
     },
     isOpera: function() {
         return this.getUserAgent().match(/Opera Mini/i);
