@@ -4,48 +4,74 @@
  * @description website: smak.pk
  */
 
-var SmartPhone = {
-    getUserAgent: function() {
+(function() {
+    var root = this;
+
+    var SmartPhone = function(obj) {
+        if (obj instanceof SmartPhone)
+            return obj;
+        if (!(this instanceof SmartPhone))
+            return new SmartPhone(obj);
+        this._wrapped = obj;
+    };
+
+    SmartPhone.userAgent = null;
+    SmartPhone.getUserAgent = function() {
         return navigator.userAgent;
-    },
-    isAndroid: function() {
+    };
+
+    SmartPhone.setUserAgent = function(userAgent) {
+        this.userAgent = userAgent;
+    };
+
+    SmartPhone.isAndroid = function() {
         return this.getUserAgent().match(/Android/i);
-    },
-    isBlackBerry: function() {
+    };
+
+    SmartPhone.isBlackBerry = function() {
         return this.getUserAgent().match(/BlackBerry/i);
-    },
-    isIOS: function() {
+    };
+
+    SmartPhone.isIOS = function() {
         return this.isIPhone() || this.isIPad() || this.isIPod();
-    },
-    isIPhone: function() {
+    };
+
+    SmartPhone.isIPhone = function() {
         return this.getUserAgent().match(/iPhone/i);
-    },
-    isIPad: function() {
+    };
+    
+    SmartPhone.isIPad = function() {
         return this.getUserAgent().match(/iPad/i);
-    },
-    isIPod: function() {
+    };
+    
+    SmartPhone.isIPod = function() {
         return this.getUserAgent().match(/iPod/i);
-    },
-    isOpera: function() {
+    };
+    
+    SmartPhone.isOpera = function() {
         return this.getUserAgent().match(/Opera Mini/i);
-    },
-    isWindows: function() {
+    };
+    
+    SmartPhone.isWindows = function() {
         return this.isWindowsDesktop() || this.isWindowsMobile();
-    },
-    isWindowsMobile: function() {
+    };
+    
+    SmartPhone.isWindowsMobile = function() {
         return this.getUserAgent().match(/IEMobile/i);
-    },
-    isWindowsDesktop: function() {
-        return this.getUserAgent().match(/WPDesktop/i); ;
-    },
-    isAny: function() {
+    };
+    
+    SmartPhone.isWindowsDesktop = function() {
+        return this.getUserAgent().match(/WPDesktop/i);
+    };
+    
+    SmartPhone.isAny = function() {
         var foundAny = false;
         var getAllMethods = Object.getOwnPropertyNames(SmartPhone).filter(function(property) {
             return typeof SmartPhone[property] == 'function';
         });
 
         for (var index in getAllMethods) {
-            if (getAllMethods[index] === 'getUserAgent' || getAllMethods[index] === 'isAny' 
+            if (getAllMethods[index] === 'getUserAgent' || getAllMethods[index] === 'isAny'
                     || getAllMethods[index] === 'isWindows' || getAllMethods[index] === 'isIOS') {
                 continue;
             }
@@ -55,5 +81,19 @@ var SmartPhone = {
             }
         }
         return foundAny;
+    };
+    
+    if(typeof window === 'function') {
+        SmartPhone.setUserAgent(navigator.userAgent);
+    } 
+    
+    if (typeof exports !== 'undefined') {
+        if (typeof module !== 'undefined' && module.exports) {
+            exports = module.exports = SmartPhone;
+        }
+        exports.SmartPhone = SmartPhone;
+    } else {
+        root.SmartPhone = SmartPhone;
     }
-};
+
+}.call(this));
