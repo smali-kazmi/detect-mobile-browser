@@ -14,3 +14,9 @@ OR
 ```javascript
 alert(SmartPhone.isAny());
 ```
+
+
+
+## Bower
+
+    $ bower install browser-detector --save
