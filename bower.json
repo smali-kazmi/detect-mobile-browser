@@ -1,0 +1,27 @@
+{
+  "name": "detect-mobile-browser",
+  "version": "1.0.0",
+  "homepage": "https://github.com/smali-kazmi/detect-mobile-browser",
+  "authors": [
+    "SM@K <smali.kazmi@hotmail.com>"
+  ],
+  "description": "A plugin to detect mobile browser in frontend and backend",
+  "main": "detect-browser.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "mobile",
+    "browser"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
