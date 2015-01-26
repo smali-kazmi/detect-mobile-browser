@@ -19,17 +19,21 @@
     SmartPhone.getUserAgent = function() {
         return navigator.userAgent;
     };
-
+    
     SmartPhone.setUserAgent = function(userAgent) {
         this.userAgent = userAgent;
     };
 
+    SmartPhone._test = function(regex) {
+        return regex.test(this.getUserAgent());
+    };
+
     SmartPhone.isAndroid = function() {
-        return this.getUserAgent().match(/Android/i);
+        return this._test(/Android/i);
     };
 
     SmartPhone.isBlackBerry = function() {
-        return this.getUserAgent().match(/BlackBerry/i);
+        return this._test(/BlackBerry/i);
     };
 
     SmartPhone.isIOS = function() {
@@ -37,19 +41,19 @@
     };
 
     SmartPhone.isIPhone = function() {
-        return this.getUserAgent().match(/iPhone/i);
+        return this._test(/iPhone/i);
     };
     
     SmartPhone.isIPad = function() {
-        return this.getUserAgent().match(/iPad/i);
+        return this._test(/iPad/i);
     };
     
     SmartPhone.isIPod = function() {
-        return this.getUserAgent().match(/iPod/i);
+        return this._test(/iPod/i);
     };
     
     SmartPhone.isOpera = function() {
-        return this.getUserAgent().match(/Opera Mini/i);
+        return this._test(/Opera Mini/i);
     };
     
     SmartPhone.isWindows = function() {
@@ -57,11 +61,11 @@
     };
     
     SmartPhone.isWindowsMobile = function() {
-        return this.getUserAgent().match(/IEMobile/i);
+        return this._test(/IEMobile/i);
     };
     
     SmartPhone.isWindowsDesktop = function() {
-        return this.getUserAgent().match(/WPDesktop/i);
+        return this._test(/WPDesktop/i);
     };
     
     SmartPhone.isAny = function() {
