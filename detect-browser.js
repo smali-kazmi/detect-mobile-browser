@@ -75,8 +75,9 @@
         });
 
         for (var index in getAllMethods) {
-            if (getAllMethods[index] === 'getUserAgent' || getAllMethods[index] === 'isAny'
-                    || getAllMethods[index] === 'isWindows' || getAllMethods[index] === 'isIOS') {
+            if (getAllMethods[index] === 'setUserAgent' || getAllMethods[index] === 'getUserAgent' 
+                    || getAllMethods[index] === 'isAny' || getAllMethods[index] === 'isWindows' 
+                    || getAllMethods[index] === 'isIOS') {
                 continue;
             }
             if (SmartPhone[getAllMethods[index]]()) {
