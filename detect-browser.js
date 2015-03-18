@@ -92,10 +92,28 @@
     } 
     
     if (typeof exports !== 'undefined') {
+        
+        var middleware = function() {
+            return function(req, res, next) {
+                
+                var userAgent = req.headers['user-agent'] || '';
+                SmartPhone.setUserAgent(userAgent);
+                req.SmartPhone = SmartPhone;
+                
+                if ('function' === typeof res.locals) {
+                    res.locals({SmartPhone: SmartPhone});
+                } else {
+                    res.locals.SmartPhone = SmartPhone;
+                }
+                
+                next();
+            };
+        };
+        
         if (typeof module !== 'undefined' && module.exports) {
-            exports = module.exports = SmartPhone;
+            exports = module.exports = middleware;
         }
-        exports.SmartPhone = SmartPhone;
+        exports = middleware;
     } else {
         root.SmartPhone = SmartPhone;
     }
