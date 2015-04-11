@@ -78,7 +78,7 @@
 
     SmartPhone.isKindleFire = function() {
         return this.userAgent().match(/Kindle Fire/i);
-    }
+    };
     
     SmartPhone.isAny = function() {
         var foundAny = false;
