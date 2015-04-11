@@ -70,11 +70,11 @@
 
     SmartPhone.isFireFox = function() {
         return this.userAgent().match(/(?=.*\bFirefox\b)(?=.*\bMobile\b)/i);
-    }
+    };
 
     SmartPhone.isNexus = function() {
         return this.userAgent().match(/Nexus/i);   
-    }
+    };
     
     SmartPhone.isAny = function() {
         var foundAny = false;
