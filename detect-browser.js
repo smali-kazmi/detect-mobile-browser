@@ -67,6 +67,10 @@
     SmartPhone.isWindowsDesktop = function() {
         return this.getUserAgent().match(/WPDesktop/i);
     };
+
+    SmartPhone.isFireFox = function() {
+        return this.userAgent().match(/(?=.*\bFirefox\b)(?=.*\bMobile\b)/i);
+    }
     
     SmartPhone.isAny = function() {
         var foundAny = false;
