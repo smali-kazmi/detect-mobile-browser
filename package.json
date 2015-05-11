@@ -1,0 +1,24 @@
+{
+  "name": "detect-mobile-browser",
+  "version": "1.0.0",
+  "description": "It is a very simple & small javascript plugin to detect all major modern mobile browsers.",
+  "main": "detect-browser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://smali-kazmi@github.com/smali-kazmi/detect-mobile-browser.git"
+  },
+  "keywords": [
+    "mobile",
+    "browser",
+    "smartphone"
+  ],
+  "author": "SM@K <smali.kazmi@hotmail.com> (http://smak.pk/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smali-kazmi/detect-mobile-browser/issues"
+  },
+  "homepage": "https://github.com/smali-kazmi/detect-mobile-browser"
+}
