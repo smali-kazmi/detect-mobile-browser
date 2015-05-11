@@ -20,3 +20,7 @@ alert(SmartPhone.isAny());
 ## Bower
 
     $ bower install browser-detector --save
+
+## NPM
+
+    $ npm install detect-mobile-browser --save
