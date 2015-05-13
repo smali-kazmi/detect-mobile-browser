@@ -1,6 +1,6 @@
 {
   "name": "detect-mobile-browser",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "It is a very simple & small javascript plugin to detect all major modern mobile browsers.",
   "main": "detect-browser.js",
   "scripts": {
@@ -14,9 +14,9 @@
     "mobile",
     "browser",
     "smartphone",
-    "tablet", 
-    "phone", 
-    "mobile", 
+    "tablet",
+    "phone",
+    "mobile",
     "useragent"
   ],
   "author": "SM@K <smali.kazmi@hotmail.com> (http://smak.pk/)",
