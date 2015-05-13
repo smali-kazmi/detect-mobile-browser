@@ -1,3 +1,6 @@
+  [![NPM Version][npm-image]][npm-url]
+  [![NPM Downloads][downloads-image]][downloads-url]
+
 Detect Mobile Browser
 =====================
 
@@ -49,3 +52,8 @@ app.get('/', function (req, res){
 ## NPM
 
     $ npm install detect-mobile-browser --save
+
+[npm-image]: https://img.shields.io/npm/v/detect-mobile-browser.svg
+[npm-url]: https://www.npmjs.com/package/detect-mobile-browser
+[downloads-image]: https://img.shields.io/npm/dm/detect-mobile-browser.svg
+[downloads-url]: https://www.npmjs.com/package/detect-mobile-browser
