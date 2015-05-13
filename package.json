@@ -13,7 +13,11 @@
   "keywords": [
     "mobile",
     "browser",
-    "smartphone"
+    "smartphone",
+    "tablet", 
+    "phone", 
+    "mobile", 
+    "useragent"
   ],
   "author": "SM@K <smali.kazmi@hotmail.com> (http://smak.pk/)",
   "license": "MIT",
