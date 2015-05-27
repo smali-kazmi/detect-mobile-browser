@@ -1,6 +1,6 @@
 {
   "name": "detect-mobile-browser",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "It is a very simple & small javascript plugin to detect all major modern mobile browsers.",
   "main": "detect-browser.js",
   "scripts": {
