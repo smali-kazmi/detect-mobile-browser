@@ -1,7 +1,7 @@
   [![NPM Version][npm-image]][npm-url]
   [![NPM Downloads][downloads-image]][downloads-url]
   [![Inline docs][docs-image]][docs-url]
-  [![NPM][npm-download-image][npm-url]
+  [![NPM][npm-download-image]][npm-url]
 
 Detect Mobile Browser
 =====================
