@@ -79,6 +79,10 @@
     SmartPhone.isKindleFire = function() {
         return this.userAgent().match(/Kindle Fire/i);
     };
+
+    SmartPhone.isPalm = function() {
+        return this.userAgent().match(/PalmSource|Palm/i);
+    };
     
     SmartPhone.isAny = function() {
         var foundAny = false;
