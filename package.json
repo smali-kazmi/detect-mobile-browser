@@ -4,7 +4,8 @@
   "description": "It is a very simple & small javascript plugin to detect all major modern mobile browsers.",
   "main": "detect-browser.js",
   "scripts": {
-    "test": "mocha test"
+    "test": "mocha test",
+    "test-travis": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*"
   },
   "repository": {
     "type": "git",
@@ -27,7 +28,8 @@
   "devDependencies": {
     "coveralls": "*",
     "mocha": "*",
-    "mocha-lcov-reporter": "*"
+    "mocha-lcov-reporter": "*",
+    "istanbul": "*"
   },
   "homepage": "https://github.com/smali-kazmi/detect-mobile-browser"
 }
