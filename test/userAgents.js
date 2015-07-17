@@ -31,36 +31,28 @@ module.exports = {
 		'call': 'isOpera',
 		'userAgent': 'Opera/9.80 (J2ME/MIDP; Opera Mini/9.80 (S60; SymbOS; Opera Mobi/23.348; U; en) Presto/2.5.25 Version/10.54'
 	},
-	'window': {
-		'call': 'isWindows',
-		'userAgent': ''
-	},
 	'windowMobile': {
 		'call': 'isWindowsMobile',
-		'userAgent': ''
+		'userAgent': 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0'
 	},
 	'windowDesktop': {
 		'call': 'isWindowsDesktop',
-		'userAgent': ''
+		'userAgent': 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; WPDesktop/9.0'
 	},
 	'firefox': {
 		'call': 'isFireFox',
-		'userAgent': ''
+		'userAgent': 'Mozilla/5.0 (Mobile; rv:14.0) Gecko/14.0 Firefox/14.0'
 	},
 	'nexus': {
 		'call': 'isNexus',
-		'userAgent': ''
+		'userAgent': 'Mozilla/5.0 (Linux; Android 4.4.4; en-us; Nexus 4 Build/JOP40D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2307.2 Mobile Safari/537.36'
 	},
 	'kindleFire': {
 		'call': 'isKindleFire',
-		'userAgent': ''
+		'userAgent': 'Mozilla/5.0 (Linux; U; Android android-version; locale; KFOT Build/product-build) AppleWebKit/webkit-version (KHTML, like Gecko) Silk/browser-version like Chrome/chrome-version Safari/webkit-version'
 	},
 	'palm': {
 		'call': 'isPalm',
-		'userAgent': ''
-	},
-	'palm': {
-		'call': 'isPalm',
-		'userAgent': ''
-	},
+		'userAgent': 'PalmSource Palm'
+	}
 };
