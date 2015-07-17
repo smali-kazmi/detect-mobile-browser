@@ -49,7 +49,7 @@ module.exports = [
 	},
 	{
 		'call': 'isKindleFire',
-		'userAgent': 'Mozilla/5.0 (Linux; U; Android android-version; locale; KFOT Build/product-build) AppleWebKit/webkit-version (KHTML, like Gecko) Silk/browser-version like Chrome/chrome-version Safari/webkit-version'
+		'userAgent': 'Mozilla/5.0 (Linux; U; Android 2.3.4; en-us; Kindle Fire Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
 	},
 	{
 		'call': 'isPalm',
