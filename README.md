@@ -1,3 +1,4 @@
+  [![Build][build-image]][npm-url]
   [![NPM Version][npm-image]][npm-url]
   [![NPM Downloads][downloads-image]][downloads-url]
   [![Inline docs][docs-image]][docs-url]
@@ -68,3 +69,4 @@ app.get('/', function (req, res){
 [downloads-url]: https://www.npmjs.com/package/detect-mobile-browser
 [docs-image]: http://inch-ci.org/github/smali-kazmi/detect-mobile-browser.svg?branch=master
 [docs-url]: http://inch-ci.org/github/smali-kazmi/detect-mobile-browser
+[build-image]: https://api.travis-ci.org/smali-kazmi/detect-mobile-browser.svg?branch=master
