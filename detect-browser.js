@@ -114,21 +114,29 @@
     
     if (typeof exports !== 'undefined') {
         
-        var middleware = function() {
-            return function(req, res, next) {
-                
-                var userAgent = req.headers['user-agent'] || '';
-                SmartPhone.setUserAgent(userAgent);
-                req.SmartPhone = SmartPhone;
-                
-                if ('function' === typeof res.locals) {
-                    res.locals({SmartPhone: SmartPhone});
-                } else {
-                    res.locals.SmartPhone = SmartPhone;
-                }
-                
-                next();
-            };
+        var middleware = function(isMiddleware) {
+
+            isMiddleware = isMiddleware === (void 0)  ? true : isMiddleware;
+
+            if(isMiddleware) {
+                return function(req, res, next) {
+                    
+                    var userAgent = req.headers['user-agent'] || '';
+                    SmartPhone.setUserAgent(userAgent);
+                    req.SmartPhone = SmartPhone;
+                    
+                    if ('function' === typeof res.locals) {
+                        res.locals({SmartPhone: SmartPhone});
+                    } else {
+                        res.locals.SmartPhone = SmartPhone;
+                    }
+                    
+                    next();
+                };
+            } else {
+                return SmartPhone;
+            }
+
         };
         
         if (typeof module !== 'undefined' && module.exports) {
