@@ -32,6 +32,10 @@
         return this.getUserAgent().match(/BlackBerry/i);
     };
 
+    SmartPhone.isBlackBerryPlayBook = function() {
+        return this.getUserAgent().match(/PlayBook/i);
+    };
+
     SmartPhone.isBlackBerry10 = function() {
         return this.getUserAgent().match(/BB10/i);
     };
