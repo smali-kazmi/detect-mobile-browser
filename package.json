@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/smali-kazmi/detect-mobile-browser/issues"
   },
+  "devDependencies": {
+    "mocha": "*"
+  },  
   "homepage": "https://github.com/smali-kazmi/detect-mobile-browser"
 }
