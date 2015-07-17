@@ -1,25 +1,18 @@
 var assert = require("assert");
 var userAgents = require('./userAgents');
-
-function evaluateUserAgent(ua) {
-
-}
+var SmartPhone = require('../detect-browser')(false);
 
 describe('SmartPhone', function() {
 
 	describe('check all SmartPhone function as per userAgents', function(){
 
-		for(index in userAgents) {
-			var ua = userAgents[index];
-			
-			it('it should check: ' + index, function(){
-				var SmartPhone = require('../detect-browser')(false);
-				SmartPhone.setUserAgent(ua['userAgent'])
-				console.log(ua['call']);
-				assert.notEqual(null, 1);
-			});	
+		userAgents.forEach(function(ua){
 
-		}
+			it('it should check: ' + ua['call'], function(){
+				SmartPhone.setUserAgent(ua['userAgent']);
+				assert.notEqual(null, SmartPhone[ua['call']]());
+			});
 
+		});
 	});
 });
