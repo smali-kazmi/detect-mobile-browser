@@ -21,15 +21,15 @@ module.exports = {
 	},
 	'ipad': {
 		'call': 'isIPad',
-		'userAgent': ''
+		'userAgent': 'Mozilla/5.0 (iPad; CPU OS 7_0 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11A465 Safari/9537.53'
 	},
 	'ipod': {
 		'call': 'isIPod',
-		'userAgent': ''
+		'userAgent': 'Mozilla/5.0 (iPod; U; CPU like Mac OS X; en) AppleWebKit/420.1 (KHTML, like Gecko) Version/3.0 Mobile/3A101a Safari/419.3'
 	},
 	'opera': {
 		'call': 'isOpera',
-		'userAgent': ''
+		'userAgent': 'Opera/9.80 (J2ME/MIDP; Opera Mini/9.80 (S60; SymbOS; Opera Mobi/23.348; U; en) Presto/2.5.25 Version/10.54'
 	},
 	'window': {
 		'call': 'isWindows',
