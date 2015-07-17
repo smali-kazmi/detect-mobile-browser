@@ -2,6 +2,7 @@
   [![NPM Version][npm-image]][npm-url]
   [![NPM Downloads][downloads-image]][downloads-url]
   [![Inline docs][docs-image]][docs-url]
+  [![Coverage Status](https://coveralls.io/repos/smali-kazmi/detect-mobile-browser/badge.svg?branch=master&service=github)](https://coveralls.io/github/smali-kazmi/detect-mobile-browser?branch=master)  
   [![NPM][npm-download-image]][npm-url]
 
 Detect Mobile Browser
