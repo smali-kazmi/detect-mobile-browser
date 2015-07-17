@@ -25,7 +25,9 @@
     "url": "https://github.com/smali-kazmi/detect-mobile-browser/issues"
   },
   "devDependencies": {
-    "mocha": "*"
+    "coveralls": "^2.11.2",
+    "mocha": "*",
+    "mocha-lcov-reporter": "0.0.2"
   },
   "homepage": "https://github.com/smali-kazmi/detect-mobile-browser"
 }
