@@ -73,19 +73,19 @@
     };
 
     SmartPhone.isFireFox = function() {
-        return this.userAgent().match(/(?=.*\bFirefox\b)(?=.*\bMobile\b)/i);
+        return this.getUserAgent().match(/Firefox/i);
     };
 
     SmartPhone.isNexus = function() {
-        return this.userAgent().match(/Nexus/i);   
+        return this.getUserAgent().match(/Nexus/i);   
     };
 
     SmartPhone.isKindleFire = function() {
-        return this.userAgent().match(/Kindle Fire/i);
+        return this.getUserAgent().match(/Kindle Fire/i);
     };
 
     SmartPhone.isPalm = function() {
-        return this.userAgent().match(/PalmSource|Palm/i);
+        return this.getUserAgent().match(/PalmSource|Palm/i);
     };
     
     SmartPhone.isAny = function() {
