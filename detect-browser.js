@@ -108,7 +108,7 @@
         return foundAny;
     };
     
-    if(typeof window === 'function') {
+    if(typeof window === 'function' || typeof window === 'object') {
         SmartPhone.setUserAgent(navigator.userAgent);
     } 
     
