@@ -5,6 +5,7 @@ node_js:
   - "0.10"
   - "iojs"
   - "iojs-v1.0.4"
+  - "iojs-v3.2.0"
 
 script: "npm run-script test-travis"
 after_success: "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
