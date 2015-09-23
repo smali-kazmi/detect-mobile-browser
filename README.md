@@ -63,6 +63,10 @@ app.get('/', function (req, res){
 
     $ npm install detect-mobile-browser --save
 
+## SPM
+
+    $ spm install detect-mobile-browser --save
+
 [npm-image]: https://img.shields.io/npm/v/detect-mobile-browser.svg
 [npm-download-image]: https://nodei.co/npm/detect-mobile-browser.png?downloads=true&downloadRank=true
 [npm-url]: https://www.npmjs.com/package/detect-mobile-browser
