@@ -10,7 +10,7 @@ Detect Mobile Browser
 
 Small plugin to detect mobile browser 
 
-**Usage Frotnend:-**
+**Usage Frontend:-**
 
 ```javascript
 alert(SmartPhone.isAndriod());
