@@ -31,5 +31,8 @@
     "mocha-lcov-reporter": "*",
     "istanbul": "*"
   },
+  "spm": {
+    "main": "detect-browser.js"
+  },
   "homepage": "https://github.com/smali-kazmi/detect-mobile-browser"
 }
