@@ -22,9 +22,20 @@ OR
 alert(SmartPhone.isAny());
 ```
 
+OR (browserify):
+
+```javascript
+var SmartPhone = require('detect-mobile-browser')(false);
+module.exports = (function($) {
+    $(document).ready(function() {
+      alert(SmartPhone.isAny());
+    });
+})(jQuery);
+```
+
 **Usage Backend:-**
 
-User as a ExpressJS middleware
+Use as an ExpressJS middleware
 
 ```javascript
 var mobileBrowser = require('./detect-browser');
@@ -66,6 +77,26 @@ app.get('/', function (req, res){
 ## SPM
 
     $ spm install detect-mobile-browser --save
+
+## List of detection functions:
+
+- isAndroid
+- isBlackBerry
+- isBlackBerryPlayBook
+- isBlackBerry10
+- isIOS
+- isIPhone
+- isIPad
+- isIPod
+- isOpera
+- isWindows
+- isWindowsMobile
+- isWindowsDesktop
+- isFireFox
+- isNexus
+- isKindleFire
+- isPalm
+- isAny
 
 [npm-image]: https://img.shields.io/npm/v/detect-mobile-browser.svg
 [npm-download-image]: https://nodei.co/npm/detect-mobile-browser.png?downloads=true&downloadRank=true
