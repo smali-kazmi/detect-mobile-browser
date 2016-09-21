@@ -38,7 +38,7 @@ module.exports = (function($) {
 Use as an ExpressJS middleware
 
 ```javascript
-var mobileBrowser = require('./detect-browser');
+var mobileBrowser = require('detect-mobile-browser');
 
 ...
 ...
