@@ -15,4 +15,29 @@ describe('SmartPhone', function() {
 
 		});
 	});
+
+  describe('check module as a middleware', function(){
+    var mw = null;
+    var req = null;
+    var res = null;
+
+    beforeEach(function(){
+      mw = require('../detect-browser')(true);
+      req = {
+        headers: {
+          'user-agent': 'blah blah'
+        }
+      };
+      res = {
+        locals: {}
+      };
+    });
+
+    it('it should contain SmartPhone object', function(done){
+      mw(req, res, function(){
+        assert.equal(false, res.locals.SmartPhone.isAny());
+        done()
+      });
+    });
+  });
 });
