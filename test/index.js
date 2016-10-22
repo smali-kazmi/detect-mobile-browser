@@ -40,4 +40,37 @@ describe('SmartPhone', function() {
       });
     });
   });
+
+  describe('check module all function as a middleware', function(){
+
+    userAgents.forEach(function(ua){
+
+      it('it should check: ' + ua['call'], function(done){
+        var mw = null;
+        var req = null;
+        var res = null;
+
+
+        mw = require('../detect-browser')(true);
+        req = {
+          headers: {
+            'user-agent': 'blah blah'
+          }
+        };
+        res = {
+          locals: {}
+        };
+
+        req.headers['user-agent'] = ua['userAgent'];
+        mw(req, res, function(){
+          assert.notEqual(null, res.locals.SmartPhone[ua['call']]());
+          done()
+        });
+      });
+
+    });
+
+  });
+
+
 });
