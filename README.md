@@ -13,7 +13,7 @@ Small plugin to detect mobile browser
 **Usage Frontend:-**
 
 ```javascript
-alert(SmartPhone.isAndriod());
+alert(SmartPhone.isAndroid());
 ```
 
 OR
